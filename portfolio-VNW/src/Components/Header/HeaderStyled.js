@@ -30,13 +30,12 @@ export const Links = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-around;
-  color: white;
+  color: #d5d5d5;
   gap: 20px;
   font-size: 1.2rem;
 
   @media screen and (max-width: 410px){
-    width: 90vw;
-    font-size: 1rem;
+    display: none;
   }
 
 `;
