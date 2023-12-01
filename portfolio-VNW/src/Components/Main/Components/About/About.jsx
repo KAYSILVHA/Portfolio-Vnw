@@ -3,7 +3,7 @@ import { AboutContainer, Title, AboutText, Paragraph, Text, CardContainer, Card 
 
 export default function About() {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <AboutText>
         <Paragraph>ABOUT</Paragraph>
         <Title>What About Me</Title>

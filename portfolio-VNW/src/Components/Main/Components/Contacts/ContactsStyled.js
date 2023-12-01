@@ -5,9 +5,9 @@ export const ContactContainer = styled.section`
   flex-direction: column;
   text-align: center;
   width: 100%;
-  height: 56.5vh;
-  padding: 20px 100px;
-  gap: 15px;
+  height: auto;
+  padding: 70px 100px;
+  gap: 20px;
   align-items: center;
 `;
 
@@ -40,4 +40,40 @@ export const GoTop = styled.div`
   font-weight: bolder;
   font-size: 1.5rem;
   border: 2px solid #9400d3;
+  margin-top: 100px;
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
+  &:hover {
+    text-shadow: 0 0 10px rgba(148, 87, 235, 0.5);
+  }
+`;
+export const ContainerSocial = styled.section`
+  width: 35rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 30px;
+`;
+
+export const SocialLinks = styled.a`
+  text-decoration: none;
+  color: #9400d3;
+`;
+
+export const Links = styled.div`
+  background-color: #34353A;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+`;
+
+export const Img = styled.img`
+  width: 30px;
+  height: 30px;
 `;

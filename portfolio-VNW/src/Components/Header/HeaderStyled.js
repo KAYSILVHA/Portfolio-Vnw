@@ -11,7 +11,7 @@ export const HeaderSyled = styled.header`
   justify-content: space-around;
   border-bottom: 2px solid #9400d3;
 
-  @media screen and (max-width: 410px){
+  @media screen and (max-width: 600px){
     height: auto;
     flex-direction: column;
     padding: 20px;
@@ -34,8 +34,13 @@ export const Links = styled.ul`
   gap: 20px;
   font-size: 1.2rem;
 
-  @media screen and (max-width: 410px){
+  @media screen and (max-width: 600px){
     display: none;
   }
 
+`;
+
+export const NavegationLinks = styled.a`
+  text-decoration: none;
+  color: #d5d5d5;
 `;

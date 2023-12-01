@@ -3,7 +3,7 @@ import { BannerContainer, NameLogo, NameSection, Line, Name, Description, Button
 
 export default function Banner() {
   return (
-    <BannerContainer>
+    <BannerContainer id="banner">
       <NameSection>
         <NameLogo>
           <Name>Kayra Silva.</Name>
