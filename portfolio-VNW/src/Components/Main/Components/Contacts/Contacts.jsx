@@ -1,11 +1,12 @@
 import React from "react";
-import { ContactContainer, Paragraph, Title, Text, GoTop, Link, SocialLinks, Links, ContainerSocial, Img} from "./ContactsStyled";
+import { ContactContainer, Paragraph, Title, Text, GoTop, Link, SocialLinks, Links, ContainerSocial, Img } from "./ContactsStyled";
 
 import Face from "../../../../assets/images/face.png"
 import Insta from "../../../../assets/images/insta.png"
 import Linkedin from "../../../../assets/images/linkedin.png"
 import Tel from "../../../../assets/images/tel.png"
 import Mail from "../../../../assets/images/mail.png"
+
 
 export default function Contacts() {
   return (
@@ -14,7 +15,10 @@ export default function Contacts() {
         <Paragraph>CONTACT ME</Paragraph>
         <Title>Whays To Contact Me</Title>
       </div>
-      <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum qui cupiditate deserunt quidem ut expedita, sunt fugiat sit quia, minus ipsa, consequatur doloremque</Text>
+      <Text>
+        You can find out more about me and my services by contacting me through one of these links.
+        I am available!
+      </Text>
       <ContainerSocial>
         <Links>
           <Img src={Mail} alt="Email" />

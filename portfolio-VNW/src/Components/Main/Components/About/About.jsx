@@ -8,7 +8,7 @@ export default function About() {
         <Paragraph>ABOUT</Paragraph>
         <Title>What About Me</Title>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ut cumque sint eum asperiores impedit. Soluta esse assumenda nesciunt recusandae ad deleniti, aspernatur minima excepturi provident quibusdam, explicabo saepe! In nobis placeat voluptatum unde accusamus adipisci incidunt amet sit, mollitia tempora ipsum corporis ducimus eos fugiat repellat totam, eaque, praesentium ab perspiciatis ratione molestias at non. Ex iure mollitia nihil. Dolorum atque, voluptatum explicabo facere nemo suscipit, corporis quasi laboriosam quidem consectetur esse quo ipsa sunt aliquid corrupti, maxime possimus dolores est tempore dignissimos? Incidunt cum temporibus delectus deserunt quod quos ipsa quaerat cupiditate dolorum, inventore deleniti aut nesciunt aspernatur?
+          I am driven by a constant passion for learning, studying and sharing knowledge. My journey is marked by the incessant desire to explore new frontiers, and I see interaction and teamwork as not just a preference, but a catalyst for success. I'm focused on improving my skills by immersing myself in new programming languages, and I'm committed to following the path that will lead to a successful career. With determination and enthusiasm, I am shaping my future, ready to overcome challenges and inspire others along the way.
         </Text>
       </AboutText>
       <CardContainer>

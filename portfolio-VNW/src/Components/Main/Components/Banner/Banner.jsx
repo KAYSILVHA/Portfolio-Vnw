@@ -1,6 +1,22 @@
 import React from "react";
-import { BannerContainer, NameLogo, NameSection, Line, Name, Description, ButtonContact, ApresentationContainer, Paragraph, Occupation, Apresentation, PhotoContainer } from './BannerStyled';
-
+import {
+  BannerContainer,
+  NameLogo,
+  NameSection,
+  Line,
+  Name,
+  Description,
+  ButtonContact,
+  ApresentationContainer,
+  Paragraph,
+  Occupation,
+  Apresentation,
+  PhotoContainer,
+  Img,
+  Link,
+  Button
+} from './BannerStyled';
+import Me from "../../../../assets/images/Me.jpeg"
 export default function Banner() {
   return (
     <BannerContainer id="banner">
@@ -13,12 +29,19 @@ export default function Banner() {
           </Description>
         </NameLogo>
         <ButtonContact>
-          <p>CONTACT ME</p>
+          <Link href="#contacts">
+            <p>CONTACT ME</p>
+          </Link>
+        </ButtonContact>
+        <ButtonContact>
+          <Link target="_blank" href="../../../../assets/Curriculo/curriculo-vnw.pdf" download="Curriculo.pdf">
+            <Button>
+              <p>DOWNLOAD CV</p>
+            </Button>
+          </Link>
         </ButtonContact>
       </NameSection>
-      <PhotoContainer>
-        <img src="" alt="" />
-      </PhotoContainer>
+
       <ApresentationContainer>
         <div>
           <Paragraph>
@@ -29,7 +52,7 @@ export default function Banner() {
           </Occupation>
         </div>
         <Apresentation>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum non quas aspernatur quisquam aperiam minus, fuga dolor odit quaerat ex repudiandae voluptates. Cupiditate itaque fuga commodi
+          Fullstack developer with skills in client-side and server-side development. I have experience in languages ​​such as JavaScript, HTML and CSS, as well as popular frameworks and libraries. Additionally, specialist in user experience (UX) and user interface (UI) design, capable of creating complete and attractive digital solutions.
         </Apresentation>
       </ApresentationContainer>
     </BannerContainer>

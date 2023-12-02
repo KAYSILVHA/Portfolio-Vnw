@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const ProjectsContainer = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   width: 100%;
   height: auto;
   padding: 100px 100px;
@@ -13,6 +12,10 @@ export const ProjectsContainer = styled.section`
   justify-content: center;
   text-align: center;
   gap: 20px;
+
+  @media screen and (max-width: 800px){
+    padding: 50px 10px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -25,6 +28,10 @@ export const Title = styled.h2`
   font-size: 2rem;
   color: #d5d5d5;
   margin-bottom: 8px;
+
+  @media screen and (max-width: 621px){
+    padding: 10px;
+  }
 `;
 
 export const Text = styled.p`
@@ -33,8 +40,29 @@ export const Text = styled.p`
   text-align: center;
   line-height: 1.5rem;
   color: #d5d5d5;
+
+  @media screen and (max-width: 621px){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
+export const ContainerText = styled.p`
+  width: 30rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+  color: #d5d5d5;
+
+  @media screen and (max-width: 621px){
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
 export const CardsContainer = styled.section`
   display: flex;
   text-align: center;
@@ -43,6 +71,12 @@ export const CardsContainer = styled.section`
   height: auto;
   gap: 20px;
   align-items: flex-end;
+
+  @media screen and (max-width: 800px){
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+  }
 `;
 
 export const CardContainerOne = styled.div`
@@ -52,6 +86,11 @@ export const CardContainerOne = styled.div`
   justify-content: space-around;
   gap: 15px;
   align-items: center;
+
+  @media screen and (max-width: 800px){
+    width: 100%;
+  }
+
 `;
 
 export const BigCard = styled.div`
@@ -67,12 +106,26 @@ export const BigCard = styled.div`
   color: #d5d5d5;
   font-weight: 600;
   width: 15rem;
+
+  @media screen and (max-width: 800px){
+    width: 350px;
+    height: 7rem;
+    flex-direction: row-reverse;
+  }
+
+  @media screen and (max-width: 414px){
+    width: 20rem;
+  }
+
+  @media screen and (max-width: 348px){
+    width: 15rem;
+  }
 `;
 
 export const LittleCard = styled.div`
   position: relative;
   display: flex;
-  flex-direction: column; /* Adicione esta linha para empilhar as imagens verticalmente */
+  flex-direction: column;
   text-align: center;
   justify-content: space-around;
   gap: 20px;
@@ -83,42 +136,45 @@ export const LittleCard = styled.div`
   padding: 10px;
   color: #d5d5d5;
   font-weight: 600;
-  overflow: hidden;
 
-  img {
-    width: 100%;
-    height: auto; /* Altere para 'auto' para garantir a altura correta das imagens */
-    object-fit: cover;
+  @media screen and (max-width: 800px){
+    width: 350px;
+    height: 7rem;
+  }
+
+  @media screen and (max-width: 414px){
+    width: 20rem;
+  }
+
+  @media screen and (max-width: 348px){
+    width: 15rem;
   }
 `;
 
-export const CarouselWrapper = styled.div`
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-`;
 
-export const Carousel = styled.div`
+export const ContentLittleCard = styled.div`
+  width: 100%;
   display: flex;
-  width: ${(props) => props.width || "100%"};
-  transform: translateX(-${(props) => props.activeIndex * (100 / props.images.length)}%);
-  transition: transform 0.5s ease;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+
+`;
+export const Img = styled.img`
+  width: 4rem;
 `;
 
-export const CarouselButton = styled.button`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
+export const BigImg = styled.img`
+  width: 7rem;
+
+  @media screen and (max-width: 800px){
+    width: 4rem;
+  }
+`;
+
+export const Link = styled.a`
   color: #d5d5d5;
-  cursor: pointer;
-`;
+  text-decoration: none;
+  font-weight: 600;
 
-export const PrevButton = styled(CarouselButton)`
-  left: 0;
-`;
-
-export const NextButton = styled(CarouselButton)`
-  right: 0;
 `;

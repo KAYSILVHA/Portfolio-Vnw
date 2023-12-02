@@ -9,6 +9,9 @@ export const ContactContainer = styled.section`
   padding: 70px 100px;
   gap: 20px;
   align-items: center;
+  @media screen and (max-width: 621px){
+    padding: 70px 20px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -21,6 +24,11 @@ export const Title = styled.h2`
   font-size: 2rem;
   color: #d5d5d5;
   margin-bottom: 8px;
+
+  @media screen and (max-width: 621px){
+    padding: 10px;
+    text-align: center;
+  }
 `;
 
 export const Text = styled.p`
@@ -28,7 +36,11 @@ export const Text = styled.p`
   font-size: 1rem;
   text-align: center;
   line-height: 1.5rem;
-  color: #d5d5d5
+  color: #d5d5d5;
+
+  @media screen and (max-width: 621px){
+    width: 90%;
+  }
 `;
 
 export const GoTop = styled.div`
@@ -41,6 +53,10 @@ export const GoTop = styled.div`
   font-size: 1.5rem;
   border: 2px solid #9400d3;
   margin-top: 100px;
+
+  @media screen and (max-width: 621px){
+    display: none;
+  }
 `;
 
 export const Link = styled.a`
@@ -57,6 +73,10 @@ export const ContainerSocial = styled.section`
   justify-content: space-around;
   gap: 20px;
   margin-top: 30px;
+
+  @media screen and (max-width: 621px){
+    width: 80%;
+  }
 `;
 
 export const SocialLinks = styled.a`
@@ -71,6 +91,9 @@ export const Links = styled.div`
   justify-content: space-around;
   align-items: center;
   gap: 10px;
+  @media screen and (max-width: 621px){
+    width: 80%;
+  }
 `;
 
 export const Img = styled.img`
