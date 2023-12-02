@@ -79,7 +79,9 @@ export const CardContainer = styled.div`
 export const Card = styled.div`
   width: 20rem;
   height: 18rem;
-  background-color: #2E2F34;
+  background-image: url(${props => props.backgroundImage});
+  background-position: center;
+  background-size: cover;
 
   @media screen and (max-width: 1085px){
     width:90%;

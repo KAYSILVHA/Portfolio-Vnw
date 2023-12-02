@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const BannerContainer = styled.section`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   height: 60vh;
   padding: 20px 0;
@@ -147,7 +147,7 @@ export const Button = styled.button`
   background: transparent;
   border: none;
   font-size: 1rem;
-  
+
   &:hover{
     cursor: pointer;
   }

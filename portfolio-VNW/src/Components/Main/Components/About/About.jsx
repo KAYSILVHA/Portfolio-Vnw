@@ -1,6 +1,9 @@
 import React from "react";
 import { AboutContainer, Title, AboutText, Paragraph, Text, CardContainer, Card } from "./AboutStyled";
-
+import Me from "../../../../assets/images/Me.jpeg"
+import Family from "../../../../assets/images/family.jpeg"
+import Formatura from "../../../../assets/images/formatura.jpeg"
+import Cod from "../../../../assets/images/cod.jpeg"
 export default function About() {
   return (
     <AboutContainer id="about">
@@ -12,10 +15,10 @@ export default function About() {
         </Text>
       </AboutText>
       <CardContainer>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Card backgroundImage={Me}></Card>
+        <Card backgroundImage={Family}></Card>
+        <Card backgroundImage={Formatura}></Card>
+        <Card backgroundImage={Cod}></Card>
       </CardContainer>
     </AboutContainer>
   );

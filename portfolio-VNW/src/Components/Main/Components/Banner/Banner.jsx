@@ -11,12 +11,10 @@ import {
   Paragraph,
   Occupation,
   Apresentation,
-  PhotoContainer,
-  Img,
   Link,
   Button
 } from './BannerStyled';
-import Me from "../../../../assets/images/Me.jpeg"
+
 export default function Banner() {
   return (
     <BannerContainer id="banner">
